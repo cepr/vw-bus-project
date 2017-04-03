@@ -5,6 +5,8 @@ propane-tank.sdl comes from https://grabcad.com/library/propane-tank
 
 */
 
+use <sink.scad>
+
 function inch(x) = x*25.4;
 
 // https://smile.amazon.com/SUNSTONE-1SSB-LP-Single-Burner-Propane/dp/B002UH8VG6/ref=pd_sbs_86_15?_encoding=UTF8&pd_rd_i=B002UH8VG6&pd_rd_r=K4AVDXYKDH73PRAJX621&pd_rd_w=wQT2U&pd_rd_wg=nK6KF&psc=1&refRID=K4AVDXYKDH73PRAJX621
@@ -84,7 +86,7 @@ translate([1050, 180, 0])
 
 bus();
 
-translate([600, 270, inch(32)])
+translate([650, 270, inch(32)])
     burner();
 
 translate([910, 350, 455])
@@ -92,6 +94,10 @@ translate([910, 350, 455])
 
 translate([380, 0, 0])
     fridge();
+
+translate([250, 270, inch(32)])
+    rotate([0, 0, 180])
+        moen_g2245622();
 
 //translate([800, 1550/3, 450])
 //    cube([inch(38), 2*1550/3, inch(7)]);
