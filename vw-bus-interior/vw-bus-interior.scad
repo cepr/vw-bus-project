@@ -11,27 +11,9 @@ function inch(x) = x*25.4;
 
 // https://smile.amazon.com/SUNSTONE-1SSB-LP-Single-Burner-Propane/dp/B002UH8VG6/ref=pd_sbs_86_15?_encoding=UTF8&pd_rd_i=B002UH8VG6&pd_rd_r=K4AVDXYKDH73PRAJX621&pd_rd_w=wQT2U&pd_rd_wg=nK6KF&psc=1&refRID=K4AVDXYKDH73PRAJX621
 module burner() {
-    color("grey")
-    union() {
-        translate([
-                0,
-                0,
-                -inch(2)])
-            cube([
-                inch(10.25),
-                inch(15.5),
-                inch(4)],
-                center = true);
-        translate([
-                0,
-                0,
-                inch(2)])
-            cube([
-                inch(11),
-                inch(17.25),
-                inch(4)],
-                center = true);
-    }
+    rotate([0,0,90])
+        scale(25.4)
+            import("propane-burner.stl");
 }
 
 module propane_tank_20lb() {
@@ -59,7 +41,7 @@ module bus() {
 }
 
 module mattress_flat() {
-    color([.8, .95, .8])
+    color([.8, .95, .8, .50])
     cube([inch(74), inch(47), inch(4)]);
 }
 
@@ -86,9 +68,6 @@ translate([1050, 180, 0])
 
 bus();
 
-translate([650, 270, inch(32)])
-    burner();
-
 translate([910, 350, 455])
     mattress_flat();
 
@@ -101,3 +80,6 @@ translate([250, 270, inch(32)])
 
 //translate([800, 1550/3, 450])
 //    cube([inch(38), 2*1550/3, inch(7)]);
+
+translate([800, 450, inch(32)])
+    burner();
