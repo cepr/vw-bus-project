@@ -1,4 +1,4 @@
-update=Sun 22 Jan 2017 10:50:20 PM PST
+update=Thu 13 Jul 2017 08:45:50 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=kicad-library/library
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -62,3 +62,6 @@ LibName30=13a_switch_x4
 LibName31=kicad-library/library/switches
 LibName32=kicad-library/library/motors
 LibName33=inputs_x8
+LibName34=lin
+LibName35=sw_sp4t
+LibName36=tdc_marker_unit
