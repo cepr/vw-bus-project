@@ -1,42 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:13a_switch_x4
-LIBS:switches
-LIBS:motors
-LIBS:inputs_x8
-LIBS:lin
-LIBS:sw_sp4t
-LIBS:tdc_marker_unit
+EESchema Schematic File Version 4
 LIBS:wiring_diagram-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -51,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Lamp W
+L wiring_diagram-rescue:Lamp W
 U 1 1 5967C2A4
 P 4450 4700
 F 0 "W" V 4300 4700 50  0000 L CNN
@@ -62,7 +26,7 @@ F 3 "" V 4450 4800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Lamp W1
+L wiring_diagram-rescue:Lamp W1
 U 1 1 5967C2AB
 P 6800 4650
 F 0 "W1" V 6650 4650 50  0000 L CNN
@@ -73,7 +37,7 @@ F 3 "" V 6800 4750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Heater Z1
+L wiring_diagram-rescue:Heater Z1
 U 1 1 5967CD52
 P 8850 4400
 F 0 "Z1" H 8700 4300 50  0000 C CNN
@@ -84,7 +48,7 @@ F 3 "" H 8850 4400 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SW_Push F7
+L wiring_diagram-rescue:SW_Push F7
 U 1 1 5967EE1B
 P 4350 2150
 F 0 "F7" H 4400 2250 50  0000 L CNN
@@ -95,7 +59,7 @@ F 3 "" H 4350 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LIN U?
+L lin:LIN U?
 U 1 1 5967EE22
 P 6000 2500
 F 0 "U?" H 6000 2000 60  0000 C CNN
@@ -106,7 +70,7 @@ F 3 "" H 5950 2600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5967EE29
 P 3950 2950
 F 0 "#PWR?" H 3950 2700 50  0001 C CNN
@@ -149,7 +113,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 2400 8850 4250
 $Comp
-L SW_SP3T SW?
+L wiring_diagram-rescue:SW_SP3T SW?
 U 1 1 59681321
 P 3800 4700
 F 0 "SW?" H 3800 4900 50  0000 C CNN
@@ -163,7 +127,7 @@ Wire Wire Line
 	4000 4700 4250 4700
 NoConn ~ 3600 4600
 $Comp
-L SW_SP3T SW?
+L wiring_diagram-rescue:SW_SP3T SW?
 U 1 1 596817BB
 P 6250 4650
 F 0 "SW?" H 6250 4850 50  0000 C CNN

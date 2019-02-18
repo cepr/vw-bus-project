@@ -1,42 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:13a_switch_x4
-LIBS:switches
-LIBS:motors
-LIBS:inputs_x8
-LIBS:lin
-LIBS:sw_sp4t
-LIBS:tdc_marker_unit
+EESchema Schematic File Version 4
 LIBS:wiring_diagram-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -51,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SW_Push H1
+L wiring_diagram-rescue:SW_Push H1
 U 1 1 5968925E
 P 2350 6400
 F 0 "H1" H 2400 6500 50  0000 L CNN
@@ -62,7 +26,7 @@ F 3 "" H 2350 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor_DC V
+L wiring_diagram-rescue:Motor_DC V
 U 1 1 5968926C
 P 3250 1400
 F 0 "V" H 3350 1500 50  0000 L CNN
@@ -75,7 +39,7 @@ $EndComp
 Text Notes 3450 1500 0    60   ~ 0
 30W
 $Comp
-L LIN U?
+L lin:LIN U?
 U 1 1 59689274
 P 4300 4350
 F 0 "U?" H 4300 3850 60  0000 C CNN
@@ -86,7 +50,7 @@ F 3 "" H 4250 4450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5968927B
 P 4850 4550
 F 0 "#PWR?" H 4850 4300 50  0001 C CNN
@@ -97,7 +61,7 @@ F 3 "" H 4850 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SP3T D?
+L wiring_diagram-rescue:SW_SP3T D?
 U 1 1 59689281
 P 2300 4000
 F 0 "D?" H 2300 4200 50  0000 C CNN
@@ -109,7 +73,7 @@ F 3 "" H 1675 4175 50  0001 C CNN
 $EndComp
 NoConn ~ 2500 3900
 $Comp
-L SW_SP4T E?
+L sw_sp4t:SW_SP4T E?
 U 1 1 5968928B
 P 2300 4650
 F 0 "E?" H 2300 4900 50  0000 C CNN
@@ -121,7 +85,7 @@ F 3 "" H 1675 4825 50  0001 C CNN
 $EndComp
 NoConn ~ 2500 4500
 $Comp
-L SW_SP3T E?
+L wiring_diagram-rescue:SW_SP3T E?
 U 1 1 59689293
 P 6550 2900
 F 0 "E?" H 6550 3100 50  0000 C CNN
@@ -133,7 +97,7 @@ F 3 "" H 5925 3075 50  0001 C CNN
 $EndComp
 NoConn ~ 6750 2800
 $Comp
-L SW_Push E?
+L wiring_diagram-rescue:SW_Push E?
 U 1 1 5968929B
 P 2350 5950
 F 0 "E?" H 2400 6050 50  0000 L CNN
@@ -144,7 +108,7 @@ F 3 "" H 2350 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 596892A2
 P 1600 6600
 F 0 "#PWR?" H 1600 6350 50  0001 C CNN
@@ -155,7 +119,7 @@ F 3 "" H 1600 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp L10A?
+L wiring_diagram-rescue:Lamp L10A?
 U 1 1 596892A8
 P 2400 2250
 F 0 "L10A?" H 2425 2400 50  0000 L CNN
@@ -166,7 +130,7 @@ F 3 "" V 2400 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp L10B?
+L wiring_diagram-rescue:Lamp L10B?
 U 1 1 596892AF
 P 3600 2250
 F 0 "L10B?" H 3625 2400 50  0000 L CNN
@@ -177,7 +141,7 @@ F 3 "" V 3600 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp L?
+L wiring_diagram-rescue:Lamp L?
 U 1 1 596892B6
 P 4650 2250
 F 0 "L?" H 4675 2400 50  0000 L CNN
@@ -262,7 +226,7 @@ Connection ~ 1600 5950
 Connection ~ 1600 5400
 Connection ~ 1600 4650
 $Comp
-L SW_SPDT_MSM E2
+L wiring_diagram-rescue:SW_SPDT_MSM E2
 U 1 1 596892E5
 P 2350 5400
 F 0 "E2" H 2350 5600 50  0000 C CNN
@@ -275,7 +239,7 @@ $EndComp
 Text Notes 3900 5700 0    60   ~ 0
 Windshield washer\nswitch
 $Comp
-L SW_SPST SW?
+L wiring_diagram-rescue:SW_SPST SW?
 U 1 1 5968C2B8
 P 4200 5350
 F 0 "SW?" H 4200 5475 50  0000 C CNN
@@ -286,7 +250,7 @@ F 3 "" H 4200 5350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SP3T E?
+L wiring_diagram-rescue:SW_SP3T E?
 U 1 1 5968C2CF
 P 8650 4400
 F 0 "E?" H 8650 4600 50  0000 C CNN
@@ -297,7 +261,7 @@ F 3 "" H 8025 4575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5968C2D6
 P 8150 6150
 F 0 "#PWR?" H 8150 5900 50  0001 C CNN
@@ -309,7 +273,7 @@ F 3 "" H 8150 6150 50  0001 C CNN
 $EndComp
 NoConn ~ 8850 4300
 $Comp
-L LIN U?
+L lin:LIN U?
 U 1 1 5968C2DD
 P 10100 4750
 F 0 "U?" H 10100 4250 60  0000 C CNN
@@ -320,7 +284,7 @@ F 3 "" H 10050 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5968C2E4
 P 10700 4950
 F 0 "#PWR?" H 10700 4700 50  0001 C CNN
@@ -331,7 +295,7 @@ F 3 "" H 10700 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_Push_Open_Dual F?
+L wiring_diagram-rescue:SW_Push_Open_Dual F?
 U 1 1 5968C2EA
 P 8750 2700
 F 0 "F?" H 8800 2800 50  0000 L CNN
@@ -342,7 +306,7 @@ F 3 "" H 8750 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LIN U?
+L lin:LIN U?
 U 1 1 5968C2F1
 P 10000 3050
 F 0 "U?" H 10000 2550 60  0000 C CNN
@@ -353,7 +317,7 @@ F 3 "" H 9950 3150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5968C2F8
 P 8350 3100
 F 0 "#PWR?" H 8350 2850 50  0001 C CNN
@@ -365,7 +329,7 @@ F 3 "" H 8350 3100 50  0001 C CNN
 $EndComp
 NoConn ~ 8950 2900
 $Comp
-L Buzzer H?
+L wiring_diagram-rescue:Buzzer H?
 U 1 1 5968C2FF
 P 6550 5750
 F 0 "H?" H 6700 5800 50  0000 L CNN
@@ -376,7 +340,7 @@ F 3 "" V 6525 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPST_Lamp E?
+L wiring_diagram-rescue:SW_SPST_Lamp E?
 U 1 1 5968C306
 P 8650 5350
 F 0 "E?" H 8675 5575 50  0000 L CNN
@@ -433,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 5350 8450 5350
 $Comp
-L SW_SPST E16
+L wiring_diagram-rescue:SW_SPST E16
 U 1 1 5968C325
 P 8650 5800
 F 0 "E16" H 8650 5925 50  0000 C CNN
@@ -453,7 +417,7 @@ Wire Wire Line
 	8450 5800 8150 5800
 Connection ~ 8150 5800
 $Comp
-L Fan V2A?
+L wiring_diagram-rescue:Fan V2A?
 U 1 1 5968C331
 P 6350 4950
 F 0 "V2A?" H 6450 5150 50  0000 L CNN
@@ -464,7 +428,7 @@ F 3 "" H 6350 4960 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fan V2B?
+L wiring_diagram-rescue:Fan V2B?
 U 1 1 5968C338
 P 7150 4950
 F 0 "V2B?" H 7250 5150 50  0000 L CNN
@@ -495,7 +459,7 @@ F0 "warning lights" 60
 F1 "warning_lights.sch" 60
 $EndSheet
 $Comp
-L SW_SPST_Lamp E3
+L wiring_diagram-rescue:SW_SPST_Lamp E3
 U 1 1 59683C67
 P 9300 6250
 F 0 "E3" H 9325 6475 50  0000 L CNN
@@ -506,7 +470,7 @@ F 3 "" H 9300 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_Push F9
+L wiring_diagram-rescue:SW_Push F9
 U 1 1 59684763
 P 6600 3350
 F 0 "F9" H 6650 3450 50  0000 L CNN

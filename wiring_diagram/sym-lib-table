@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name wiring_diagram-rescue)(type Legacy)(uri ${KIPRJMOD}/wiring_diagram-rescue.lib)(options "")(descr ""))
+  (lib (name 13a_switch_x4)(type Legacy)(uri ${KIPRJMOD}/13a_switch_x4.lib)(options "")(descr ""))
+  (lib (name inputs_x8)(type Legacy)(uri ${KIPRJMOD}/inputs_x8.lib)(options "")(descr ""))
+  (lib (name lin)(type Legacy)(uri ${KIPRJMOD}/lin.lib)(options "")(descr ""))
+  (lib (name sw_sp4t)(type Legacy)(uri ${KIPRJMOD}/sw_sp4t.lib)(options "")(descr ""))
+  (lib (name tdc_marker_unit)(type Legacy)(uri ${KIPRJMOD}/tdc_marker_unit.lib)(options "")(descr ""))
+  (lib (name vw-bus-project)(type Legacy)(uri /mnt/external/home/cpriscal/projects/vw-bus-project/wiring_diagram/vw-bus-project.lib)(options "")(descr ""))
+)

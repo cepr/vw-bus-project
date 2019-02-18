@@ -1,42 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:13a_switch_x4
-LIBS:switches
-LIBS:motors
-LIBS:inputs_x8
-LIBS:lin
-LIBS:sw_sp4t
-LIBS:tdc_marker_unit
+EESchema Schematic File Version 4
 LIBS:wiring_diagram-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -61,6 +25,7 @@ S 8250 1700 1450 1400
 U 59670C7B
 F0 "lights" 60
 F1 "lights.sch" 60
+F2 "LIN" B L 8250 2400 50 
 $EndSheet
 $Sheet
 S 11200 1900 1400 1250
